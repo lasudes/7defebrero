@@ -2,6 +2,9 @@ from django.shortcuts import render
 from AppCoder.models import *
 # Create your views here.
 
+def inicio(request):
+    return render(request, "AppCoder/inicio.html")
+
 def ver_estudiante(request):
 
     estudiantes = Estudiante.objects.all
