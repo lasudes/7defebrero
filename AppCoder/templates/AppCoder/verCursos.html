@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Cursos</title>
-</head>
-<body>
-    {% for cursada in cursos %}
+{% extends "AppCoder/padre.html" %}
 
-    {{cursada.nombre}}
 
-    {% endfor %}
-</body>
-</html>
+{% load static %}
+
+
+{% block titulo %}
+
+Esta pagina mostrara los cursos
+
+{% endblock %}

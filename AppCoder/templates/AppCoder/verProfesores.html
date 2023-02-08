@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver Profesores</title>
-</head>
-<body>
-    {% for profes in profesores %}
+{% extends "AppCoder/padre.html" %}
 
-    {{profes.nombre}}
 
-    {% endfor %}
-</body>
-</html>
+{% load static %}
+
+
+{% block titulo %}
+
+Esta pagina mostrara los profesores
+
+{% endblock %}
